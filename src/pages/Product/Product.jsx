@@ -13,7 +13,7 @@ const Product = () => {
                 <Button text='See Details'/>
             </div>
 
-            <img className={s.img} src="/public/brownsugaroatmeal.svg" alt="" />
+            <img className={s.img} src="/brownsugaroatmeal.svg" alt="" />
         </div>
     </section>
   )
