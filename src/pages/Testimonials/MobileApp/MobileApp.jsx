@@ -5,17 +5,17 @@ const MobileApp = () => {
    const mobileAppData = [
       {
          id: 1,
-         src: "/public/hand.svg",
+         src: "/hand.svg",
          text: "Select Your Food",
       },
       {
          id: 2,
-         src: "/public/cart.svg",
+         src: "/cart.svg",
          text: "Add To Cart",
       },
       {
          id: 3,
-         src: "/public/note.svg",
+         src: "/note.svg",
          text: "Order Your Food",
       },
    ]
@@ -38,8 +38,8 @@ const MobileApp = () => {
             </div>
             
             <div className={s.links}>
-               <a className={s.link} target='blanc' href="https://play.google.com/" ><img src="/public/googleplay.svg" alt="google" /></a>
-               <a className={s.link} target='blanc' href="https://www.apple.com/app-store/"><img src="/public/appstore.svg" alt="appStore" /></a>
+               <a className={s.link} target='blanc' href="https://play.google.com/" ><img src="/googleplay.svg" alt="google" /></a>
+               <a className={s.link} target='blanc' href="https://www.apple.com/app-store/"><img src="/appstore.svg" alt="appStore" /></a>
             </div>
          </div>
       </div>
