@@ -1,0 +1,65 @@
+.contactUs {
+    min-height: 80dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        max-width: 637px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 28px;
+        padding: 0 10px;
+
+        .ttl {
+            font-weight: 500;
+            font-size: 44px;
+            text-align: center;
+
+            @media (max-width: 432px) {
+                font-size: 36px;
+            }
+        }
+
+        .question {
+            display: flex;
+            align-items: center;
+            max-width: 637px;
+            width: 100%;
+            background-color: var(--white);
+            border-radius: 5px;
+
+            .questionInput {
+                font-size: 14px;
+                opacity: 0.6;
+                padding: 29px;
+                border-radius: 5px;
+                background-color: transparent;
+                width: 100%;
+            }
+            .btn {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 20px;
+                color: #fff;
+                border-radius:  5px;
+                max-width: 134px;
+                max-height: 79px;
+                background-color: var(--pink);
+                padding: 25px 40px;
+                cursor: pointer;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: var(--black);
+                    opacity: 0.7;
+                 }
+                 &:active {
+                    opacity: 1;
+                 }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.delivery {
+    max-width: 1117px;
+    width: 100%;
+    display: flex;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+
+    @media (max-width: 1090px) {
+        justify-content: center;
+        max-width: 800px;
+    }
+    
+}

@@ -1,0 +1,100 @@
+.iceCreamItem {
+    max-width: 1119px;
+    width: 100%;
+    display: flex;
+    gap: 85px;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    .block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+            
+            .description {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                text-align: right;
+
+                @media (max-width: 597px) {    
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+        
+        @media (max-width: 597px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .img {
+            max-width: 580px;
+            width: 100%;
+            
+            @media (max-width: 889px) {
+                max-width: 400px;
+            }
+            
+            @media (max-width: 773px) {
+                max-width: 300px;
+            }
+
+            @media (max-width: 597px) {
+                max-width: 500px;
+            }
+        }
+        
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width: 597px) {    
+                align-items: center;
+            }
+            
+            .name {
+                font-family: var(--second-family);
+                font-size: 26px;
+                color: var(--black);
+                margin-bottom: 11px;
+            }
+    
+            .subttl {
+                font-size: 16px;
+                color: var(--black);
+                opacity: 0.7;
+                margin-bottom: 28px;
+            }
+    
+            .price {
+                font-family: var(--second-family);
+                font-weight: 500;
+                font-size: 26px;
+                color: var(--black);
+                margin-bottom: 16px;
+                
+                .oldPrice {
+                    font-family: var(--second-family);
+                    font-size: 20px;
+                    text-decoration: line-through;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,29 @@
+.iceCreamList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 64px 0 46px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+
+    @media (max-width: 435px) {
+        margin: 32px 0 23px;
+    }
+
+    .txt {
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--black);
+        opacity: 0.6;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 4px;
+        transition: 0.5s;
+        cursor: pointer;
+        
+        &:hover {
+            opacity: 1;
+            border-bottom-color: var(--pink);
+        }
+    }
+}

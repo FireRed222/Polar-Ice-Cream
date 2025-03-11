@@ -1,0 +1,75 @@
+.header {
+    background-color: rgb(242, 206, 218, 0.3);
+    
+    
+    .container {
+        max-width: 1125px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+
+        .block {
+            max-width: 665px;
+            width: 100%;
+            padding-left: 10px;
+            @media (max-width: 927px) {
+                text-align: center;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+            .subttl {
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                color: var(--black);
+                margin-bottom: 6px;
+            }
+            .ttl {
+                font-family: var(--third-family);
+                font-weight: 700;
+                font-size: 39px;
+                line-height: 90%;
+                color: var(--black);
+                opacity: 0.9;
+
+                @media (max-width: 455px) {
+                    font-size: 37px;
+                }
+                
+                .pink {
+                    color: var(--pink);
+                    font-family: var(--third-family);
+                    font-weight: 700;
+                    font-size: 39px;
+                    opacity: 0.9;
+                    @media (max-width: 455px) {
+                        font-size: 37px;
+                        line-height: 90%;
+                    }
+                }
+            }
+            .txt {
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: var(--black);
+                opacity: 0.6;
+                margin-top: 15px;
+                margin-bottom: 50px;
+            }
+        }
+        .img {
+            @media (max-width: 1118px) {
+                width: 518px;
+            }
+            @media (max-width: 927px) {
+                display: none;
+            }
+        }
+    }
+}

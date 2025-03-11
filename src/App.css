@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Hind Madurai", sans-serif;
+  --third-family: "Fredoka", sans-serif;
+  --light_pink: #f2ceda;
+  --pink: #d23166;
+  --black: #150101;
+  --white: #fafafa;
+  --white1: #FFF;
+}
+
+.dark-mode {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Hind Madurai", sans-serif;
+  --third-family: "Fredoka", sans-serif;
+  --light_pink: #d25f85;
+  --pink: #bc144c;
+  --black: #460101;
+  --white: #f6d4d4; 
+  --white1: #f6d4d4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.5;
+  font-family: var(--font-family);
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  scroll-behavior: smooth;
+  background-color: var(--white1);
+  
+}
+
+
+img,
+video,
+picture,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.mySwiper{
+  
+  .swiper-wrapper {
+    align-items: center;  
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 35px;
+      }
+    }
+
+    .swiper-slide-active {
+      img {
+        max-width: 57px;
+        border: 2px solid #D64374;
+        border-radius: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.icecream {
+    max-width: 1160px;
+    width: 100%;
+    margin: 97px auto;
+    
+    
+    .ttl {
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 44px;
+        color: var(--black);
+        text-align: center;
+        
+        @media (max-width: 435px) {
+            font-size: 35px;
+        }
+    }
+
+}
